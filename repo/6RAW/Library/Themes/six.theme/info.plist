@@ -3,4 +3,92 @@
 		<key>IB-MaskIcons</key>
 		<true/>
 	</dict>
+	<dict>
+
+			<key>PackageName</key>
+		<string>6RAW</string>
+
+
+
+
+
+			<key>CalendarIconDateSettings</key>
+
+			<dict>
+
+					<key>FontSize</key>
+
+					<integer>35</integer>
+
+					<key>FontWeight</key>
+
+					<string>bold</string>
+
+		<key>FontName</key>
+
+		<string>Helvetica</string>
+
+					<key>ShadowBlurRadius</key>
+
+					<integer>0</integer>
+
+					<key>ShadowColor</key>
+
+					<string>#000000</string>
+
+					<key>ShadowXoffset</key>
+
+					<real>0</real>
+
+					<key>ShadowYoffset</key>
+
+					<real>0</real>
+
+					<key>TextColor</key>
+
+					<string>#000000</string>
+
+					<key>TextYoffset</key>
+
+					<real>5</real>
+
+			</dict>
+
+			<key>CalendarIconDaySettings</key>
+
+			<dict>
+					<key>FontName</key>
+
+					<string>Helvetica</string>
+
+					<key>FontSize</key>
+
+					<integer>12</integer>
+
+					<key>ShadowBlurRadius</key>
+
+					<integer>0</integer>
+
+					<key>ShadowColor</key>
+
+					<string>#ffffff</string>
+
+					<key>ShadowXoffset</key>
+
+					<real>0.0</real>
+
+					<key>ShadowYoffset</key>
+
+					<real>0.0</real>
+
+					<key>TextColor</key>
+
+					<string>#ffffff</string>
+
+					<key>TextYoffset</key>
+
+					<real>-4</real>
+			</dict>
+
+	</dict>
 </plist>
