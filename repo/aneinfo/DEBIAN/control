@@ -1,0 +1,7 @@
+Package: me.jailbrek.aneinfo
+Name: AneInfo
+Version: 1.2
+Architecture: iphoneos-arm
+Maintainer: eobsite1
+Description: My aneinfo package
+Section: Repackages
