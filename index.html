@@ -1,25 +1,73 @@
-<!--Title and stuff-->
+<!DOCTYPE html>
+<html lang="en">
 <title>JailBrek.Me</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
-<head>
-  <div class=“head”>
-     <h1>JailBrek.Me</h1>
-    <h2>All of @eobsite1's projects</h2>
-  </div>
-</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <body>
- <div class=“body”>
-  <br />
-  <h3>ShellTer</h3>
-  <p>ShellTer is a (soon to be deprecated)Launcher for shell scripts. If you want to use it then you can find the installer
-    <a href="https://github.com/NightVisionGroup/shellter/blob/master/Installer.sh">here</a> but I am currently working on a
-    Java version that will be released soon. Update: The java version of shellter has been deprecated. The ShellTer project has been indefinitely postponed.</p>
-  <br />
-  <h3>Custom JBME?</h3>
-  <p>Starting working on that now. Should be up soon enough</p>
-  <br />
-  <h3>Repo?</h3>
-  <p>You can find my repo <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://jailbrek.me/repo/">here. It currently only contains "iOS 6: Raw", the first theme created by the ThemeBois.</p>
- </div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">eobsite1 | NightVisionLabs</a>
+
+    </div>
+  </div>
+</nav>
+<div class="container" style="padding-top: 55px;">
+  <div class="row">
+    <div class="col-xs-3">
+      <div class="well" style="padding-left: 15px; padding-right: 20px;">
+        <h1 style="text-align: center"><i class="glyphicon glyphicon-shopping-cart"></i></h1>
+        <h4 class="text-muted" style="text-align: center"><a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://jailbrek.me/repo/">Cydia</a></h3>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="well" style="padding-left: 15px; padding-right: 20px">
+        <h1 style="text-align: center"><i class="glyphicon glyphicon-bookmark"></i></h1>
+        <h4 class="text-muted" style="text-align: center"><a href="https://github.com/eobrien16/">GitHub</a></h4>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="well" style="padding-left: 15px; padding-right: 20px;">
+        <h1 style="text-align: center"><i class="glyphicon glyphicon-eur"></i></h1>
+        <h4 class="text-muted" style="text-align: center"><a href="https://paypal.me/eobsite1/">PayPal</a></h4>
+      </div>
+    </div>
+    <div class="col-xs-3">
+        <div class="well" style="padding-left: 15px; padding-right: 20px;">
+          <h1 style="text-align: center"><i class="glyphicon glyphicon-user"></i></h1>
+          <h4 class="text-muted" style="text-align: center"><a data-toggle="modal" href="#login">Login</a></h4>
+        </div>
+      </div>
+    <div class="modal fade" id="login" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div id="er" style="display: none;">
+              <div class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>Incorrect Username or password
+              </div>
+          </div>
+          <div class="modal-header" align="center">
+            <img class="img-circle" id="img_logo" height="150" width="150" src="https://res.cloudinary.com/teepublic/image/private/s--7r-KyFTS--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1505009510/production/designs/1884977_1.jpg" />
+            
+          </div>
+          <div class="modal-body">
+            <input id="uname" class="form-control" type="text" placeholder="Username" required>
+            <input id="pword" class="form-control" type="password" placeholder="Password" required>
+            <input type="button" onclick="check()" class="btn btn-default" value="Submit" style="text-align: center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
+</html>
+<script>
+  function check(){
+    document.getElementById("er").style.display = "block";
+  }
+</script>
